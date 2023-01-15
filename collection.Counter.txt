@@ -1,0 +1,13 @@
+
+#collection.Counter()
+
+x=int(input())
+l=list(map(int,input().split()))
+n=int(input())
+sum=0
+for i in range(n):
+    a,b=map(int,input().split())
+    if a in l:
+        sum += b 
+        l.pop(l.index(a))
+print(sum)
